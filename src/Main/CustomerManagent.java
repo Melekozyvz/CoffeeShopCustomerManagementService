@@ -14,7 +14,7 @@ import adapters.MernisServiceAdapter;
 public class CustomerManagent {
 
 	public static void main(String[] args) {
-		Customer customer=new Customer("Melek","Tiftik",new Date(1996,11,29),"36529957624");
+		Customer customer=new Customer("John","Doe",new Date(2000,05,30),"00000000000");
 		BaseCustomerManager nero=new StarbucksCustomerManager(new MernisServiceAdapter());
 		try {
 			nero.save(customer);
